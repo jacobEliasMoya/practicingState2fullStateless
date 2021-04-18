@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+// simple class to render button element 
 export class Button extends Component {
 
     render() {

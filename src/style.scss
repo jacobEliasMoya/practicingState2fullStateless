@@ -1,3 +1,5 @@
+// mixins created and used throughout most my projects, makes for DRY style code
+
 // DONT TOUCH
 @mixin flexCol {
     display: flex;
@@ -39,22 +41,26 @@
     transform: translate(-50%,-50%);
 }
 
+// removing padding and margins/ using preferred box sizing method
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+// styling main app
 .mainApp{
     @include fullScreener();
     @include flexCol();
     background-color: black;
 
+    // styling button
     button{
         background: purple;
         color: lime;
         font-size: 3vw;
         cursor: pointer;
+
         &:hover{
             color: purple;
             background: lime;

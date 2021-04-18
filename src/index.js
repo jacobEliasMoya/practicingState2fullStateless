@@ -19,16 +19,14 @@ class Index extends React.Component {
   }
 
   changeColor(){
-    const colorArr = ['red','green','blue'];
+    const colorArr = ['red','green','blue','silver','purple','aqua'];
     const randomNum = Math.floor(Math.random()*colorArr.length);
 
     this.setState({
       COLOR:colorArr[randomNum]
     })
 
-    console.log(this.state.COLOR);
-    // document.getElementById('root').style.backgroundColor=this.state.COLOR;
-    
+    document.querySelector('#root').style.backgroundColor=this.state.COLOR;
 
   }
 
